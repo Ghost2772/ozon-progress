@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Reusable circular Progress component built with vanilla JavaScript, HTML and CSS.">
+    <meta name="color-scheme" content="light">
+    <title>Progress</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="./progress.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./progress.js" defer></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <h1 class="page-title">Progress</h1>
+
+    <main class="demo">
+      <div class="progress-slot" id="progress"></div>
+
+      <section class="controls" aria-label="Progress controls">
+        <label class="control" for="value">
+          <input class="value-input" id="value" type="number" min="0" max="100"
+            step="any" inputmode="decimal" value="60" autocomplete="off"
+            aria-describedby="value-hint">
+          <span>Value</span>
+        </label>
+        <span class="visually-hidden" id="value-hint">A number from 0 to 100.</span>
+
+        <label class="control" for="animate">
+          <span class="switch">
+            <input class="switch__input" id="animate" type="checkbox" role="switch">
+            <span class="switch__track" aria-hidden="true"></span>
+          </span>
+          <span>Animate</span>
+        </label>
+
+        <label class="control" for="hide">
+          <span class="switch">
+            <input class="switch__input" id="hide" type="checkbox" role="switch">
+            <span class="switch__track" aria-hidden="true"></span>
+          </span>
+          <span>Hide</span>
+        </label>
+      </section>
+    </main>
+  </body>
+</html>
